@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures body takes up full screen height */
+    flex-direction: column; /* Aligns footer at the bottom */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* User Input Section */
+#userInput {
+    flex: 1;
+    text-align: left;
+}
+
+#userInput h2 {
+    margin: 10px 0;
+    color: #555;
+    font-size: 18px;
+}
+
+#userInput select, #userInput input, #userInput range {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+#userInput select:hover, #userInput input:hover, #userInput range:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#userInput button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#userInput button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Visualization section */
+#visualization {
+    flex: 2;
+    margin-top: 40px;
+}
+
+#visualization h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Array Container */
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    height: 400px;
+    transition: all 0.3s ease;
+}
+
+/* Bar Style */
+.bar {
+    width: 35px;
+    background-color: #3b8beb;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.bar-value {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+.bar:hover {
+    background-color: #ffa500;
+    transform: scaleY(1.1);
+}
+
+.bar.active {
+    background-color: #ff9800;
+    transform: scaleY(1.2);
+}
+
+.bar.done {
+    background-color: #4caf50;
+    transform: scaleY(1);
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    color: #555;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* LinkedIn icon styling */
+footer i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #0077b5; /* LinkedIn blue color */
+}
+
+footer a:hover i {
+    color: #006097; /* Darker blue on hover */
+}

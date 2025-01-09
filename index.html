@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Algorithm Visualizer</h1>
+        </header>
+
+        <div class="content">
+            <section id="userInput">
+                <h2>Select an Algorithm</h2>
+                <select id="algorithmSelect">
+                    <option value="bubbleSort">Bubble Sort</option>
+                    <option value="insertionSort">Insertion Sort</option>
+                    <option value="selectionSort">Selection Sort</option>
+                    <option value="mergeSort">Merge Sort</option>
+                    <option value="quickSort">Quick Sort</option>
+                </select>
+
+                <h2>Enter Array</h2>
+                <input type="text" id="arrayInput" placeholder="Enter array (e.g. 5,3,8,4,2)" />
+
+                <h2>Select Sorting Order</h2>
+                <select id="sortOrderSelect">
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+
+                <h2>Choose Visualization Speed</h2>
+                <input type="range" id="speedRange" min="50" max="1000" value="300">
+
+                <button onclick="visualize()">Visualize</button>
+            </section>
+
+            <section id="visualization">
+                <h2>Visualization</h2>
+                <div id="arrayContainer" class="array-container"></div>
+            </section>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>|| Made by Megha Mathur || <a href="https://www.linkedin.com/in/meghamathur17" target="_blank">
+                <i class="fab fa-linkedin"></i> </a></p>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
